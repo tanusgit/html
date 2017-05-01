@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="table.css" type="text/css">
+</head>
+
+<body>
+<form id="form" action="" method="">
+	<div id="row">
+		<label for="name">name:</label>
+		<input type="text" id="name" name="">
+		<br />
+	<br />
+</div>
+
+<div id="row">
+	<label for="n">address:</label>
+	<input type="text" id="n" name="">
+	<br />
+<br />
+</div>
+
+<div id="row">
+	<label for="a">phone:</label>
+	<input type="text" id="a" name="">
+	<br /><br />
+</div>
+
+<div id="row">
+	<label for="e">email:</label>
+	<input type="text" id="e" name="">
+	<br /><br />
+</div>
+</form>
+
+<div class="box1">
+<h1> Text</h1>
+</div>
+<br />
+<div class="linear">
+<h1> Text</h1>
+</div>
+<p>
+there was a hero
+<br />
+<br />
+</p>
+<div class="pic" onmouseover="showtext(this)" onmouseout="hidetext(this)">
+<span class="phover" id="hidtext">this is my favourite breakfast. i love to have this in the morning.thanks for watching my website.welcome to my website. i love to have this in the morning.thanks for watching my website.welcome to my website.</span>
+</div>
+
+<script>
+function showtext() {
+	var x = document.getElementById("hidtext");
+	x.style.display = "block";
+}
+
+function hidetext() {
+	var x = document.getElementById("hidtext");
+	x.style.display = "none";
+}
+
+</script>
+
+</body>
+</html>

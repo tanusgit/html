@@ -1,0 +1,91 @@
+#form{color:white;
+display:table;
+padding:15px;
+background-color:green;
+border:solid 4px black;
+}
+
+#row{display:table-row;
+}
+
+#row label{display:table-cell;
+padding:2px;
+text-align:right;
+}
+
+#row input{
+	display:table-cell;
+padding:2px;
+}
+
+.box1{
+	height:100px;
+	width:400px;
+	background-color:red;
+	padding:10px;
+	border:4px black solid;
+	opacity:0.3;
+	margin-top:20px;
+}
+
+.box1:hover{
+	opacity:1.0;
+}
+
+.box{
+	height:200px;	
+	width:400px;
+	background-color:red;
+	padding:10px;
+	border:4px black solid;
+}
+
+
+.linear{height:200px;
+	width:400px;
+	background-color:green;
+	margin-top:0px;
+	background:linear-gradient(to top right, red, pink,green,yellow);
+}
+
+.pic{
+	width:400px;
+	height:220px;
+	position: relative;
+	background-image: url('126.jpg');
+	background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.pic span{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+@keyframes slide {
+  from { bottom: -50%;}
+  to { bottom: 0%;}
+}
+
+@-webkit-keyframes slide {
+  from { bottom: -50%;}
+  to { bottom: 0%;}
+}
+
+.phover {
+	display:none;
+	background-color:lightblack;
+	opacity: 0.8;
+	color:white;
+	font-size:22px;
+	font-weight:bold;
+	animation-name: slide;
+    animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	-webkit-animation-name: slide;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count: 1;
+}
