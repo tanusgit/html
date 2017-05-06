@@ -1,0 +1,43 @@
+*{margin:0px;
+padding:0px;}
+
+#main ul{list-style:none;}
+
+#main ul li{
+background-color:red;
+height:50px;
+border:2px solid white;
+width:120px;
+text-align:center;
+line-height:50px;
+float:left;
+position:relative;
+border-radius:8px;}
+
+#main ul li a{text-decoration:none;
+display:block;
+color:black;
+}
+
+#main ul li a:hover{
+background-color:green;
+border-radius:8px;}
+
+#main ul ul {position:absolute;
+display:none;}
+
+#main ul li:hover > ul
+{display:block;}
+#main ul ul ul{
+	margin-left:120px;
+	top:0px;
+}
+
+.glyphicon.glyphicon-chevron-down{
+    font-size: 0.7em;
+	color: white;
+}
+.glyphicon.glyphicon-chevron-right{
+    font-size: 0.7em;
+	color: white;
+}
